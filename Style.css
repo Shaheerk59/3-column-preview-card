@@ -1,5 +1,4 @@
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -9,5 +8,137 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 1rem;
+  gap: 1rem;
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body .main .containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+body .main .sedans {
+  background-color: #e38826;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+body .main .SUVs {
+  background-color: #006970;
+}
+
+body .main .Luxury {
+  background-color: #004241;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+body .main .icon {
+  width: 4rem;
+}
+
+body .main h1 {
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+
+body .main p {
+  font-family: "Lexend Deca";
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+}
+
+body .main button {
+  border: 0px;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+  width: 10.5rem;
+  height: 3.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+body .main .orange-button {
+  color: #e38826;
+}
+
+body .main .orange-button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+body .main .blue-button {
+  color: #006970;
+}
+
+body .main .blue-button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+body .main .green-button {
+  color: #004241;
+}
+
+body .main .green-button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+body .main .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .main .attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=Style.css.map */

@@ -9,8 +9,8 @@
 }
 
 //imported Fonts
-@import url(https://fonts.google.com/specimen/Lexend+Deca); //400
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display); //700
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"); //Lexend Deca-400
+//Big Shoulder Display-700
 
 //variables
 $clr-Bright-orange: hsl(31, 77%, 52%);
@@ -20,3 +20,99 @@ $clr-Transparent-white: hsla(0, 0%, 100%, 0.75); //(paragraphs)
 $clr-Very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
 $family-Lexend-Deca: "Lexend Deca";
 $family-Big-Shoulders-Display: "Big Shoulders Display";
+
+body {
+  background-color: $clr-Very-light-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  gap: 1rem;
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    .containers {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      padding: 3rem;
+      gap: 2rem;
+    }
+    .sedans {
+      background-color: $clr-Bright-orange;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    .SUVs {
+      background-color: $clr-Dark-cyan;
+    }
+    .Luxury {
+      background-color: $clr-Very-dark-cyan;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    .icon {
+      width: 4rem;
+    }
+    h1 {
+      font-family: $family-Big-Shoulders-Display;
+      color: $clr-Very-light-gray;
+      font-size: 2.7rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $family-Lexend-Deca;
+      font-size: 1rem;
+      color: $clr-Transparent-white;
+      line-height: 1.8;
+    }
+    button {
+      //   color: $clr-Very-light-gray;
+      border: 0px;
+      border-radius: 2rem;
+      background-color: $clr-Very-light-gray;
+      width: 10.5rem;
+      height: 3.5rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 100ms ease-in-out;
+    }
+    .orange-button {
+      color: $clr-Bright-orange;
+      &:hover {
+        background-color: $clr-Bright-orange;
+        color: $clr-Very-light-gray;
+        border: 2px solid $clr-Very-light-gray;
+      }
+    }
+
+    .blue-button {
+      color: $clr-Dark-cyan;
+      &:hover {
+        background-color: $clr-Dark-cyan;
+        color: $clr-Very-light-gray;
+        border: 2px solid $clr-Very-light-gray;
+      }
+    }
+    .green-button {
+      color: $clr-Very-dark-cyan;
+      &:hover {
+        background-color: $clr-Very-dark-cyan;
+        color: $clr-Very-light-gray;
+        border: 2px solid $clr-Very-light-gray;
+      }
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
