@@ -1,0 +1,22 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+//imported Fonts
+@import url(https://fonts.google.com/specimen/Lexend+Deca); //400
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display); //700
+
+//variables
+$clr-Bright-orange: hsl(31, 77%, 52%);
+$clr-Dark-cyan: hsl(184, 100%, 22%);
+$clr-Very-dark-cyan: hsl(179, 100%, 13%);
+$clr-Transparent-white: hsla(0, 0%, 100%, 0.75); //(paragraphs)
+$clr-Very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+$family-Lexend-Deca: "Lexend Deca";
+$family-Big-Shoulders-Display: "Big Shoulders Display";
