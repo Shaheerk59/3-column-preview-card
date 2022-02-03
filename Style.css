@@ -148,7 +148,7 @@ body .main .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 10% 12%;
+    padding: 10% 14%;
   }
   body .main .sedans {
     border-radius: 0px;
