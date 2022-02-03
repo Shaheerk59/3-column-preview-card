@@ -115,4 +115,33 @@ body {
       color: hsl(228, 45%, 44%);
     }
   }
+
+  @media only screen and (min-width: 900px) {
+    .main {
+      flex-direction: row;
+      padding: 10% 12%;
+      .sedans {
+        border-radius: 0px;
+        border-top-left-radius: 0.5rem;
+
+        border-bottom-left-radius: 0.5rem;
+      }
+      .SUVs {
+        border-radius: 0px;
+      }
+      .Luxury {
+        border-radius: 0px;
+        border-top-right-radius: 0.5rem;
+
+        border-bottom-right-radius: 0.5rem;
+      }
+
+      .icon {
+        width: 5rem;
+      }
+      button {
+        margin-top: 4rem;
+      }
+    }
+  }
 }

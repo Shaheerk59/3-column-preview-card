@@ -141,4 +141,33 @@ body .main .attribution {
 body .main .attribution a {
   color: #3e52a3;
 }
+
+@media only screen and (min-width: 900px) {
+  body .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10% 12%;
+  }
+  body .main .sedans {
+    border-radius: 0px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  body .main .SUVs {
+    border-radius: 0px;
+  }
+  body .main .Luxury {
+    border-radius: 0px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  body .main .icon {
+    width: 5rem;
+  }
+  body .main button {
+    margin-top: 4rem;
+  }
+}
 /*# sourceMappingURL=Style.css.map */
